@@ -5,7 +5,7 @@ import NavBar from './components/navigation/NavBar'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <NavBar/>
+      <NavBar />
       <div>
         <Image
           src="/images/meditation.jpg"
@@ -16,7 +16,7 @@ export default function Home() {
         />
         <Link href='/users'>Users</Link>
       </div>
-      <div id="section2" className='min-h-screen'>
+      <div id="section2" className='min-h-screen back'>
 
       </div>
     </main>
