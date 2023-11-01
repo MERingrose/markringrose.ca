@@ -29,9 +29,9 @@ export function NavBar() {
         </div>
         <div id='sidebar' className={'min-h-[25vh] fixed bg-transparent w-1/4 right-0 items-center justify-between ' + (sidebar ? "visible" : "invisible")}>
           <ul className='float-right mr-20 mt-15 '>
-            <li className='p-2'><Link href="/pages/page">About</Link></li>
-            <li className='p-2'><Link href="/pages/work">Work</Link></li>
-            <li className='p-2'><Link href="/pages/contact">Contact</Link></li>
+            <li className='p-2'><Link href="/about">About</Link></li>
+            <li className='p-2'><Link href="/work">Work</Link></li>
+            <li className='p-2'><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
       </nav>
