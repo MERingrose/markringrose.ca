@@ -8,13 +8,16 @@ export default async function Home() {
   interface quotation{
     text: string, 
     author: string
-  }
+  };
 
-  const quote = await fetch("https://type.fit/api/quotes").then(function(response) {
+  const key = "gWno1afgUHLXw2JN85O6QA==5jDaKRdeo28FGwBH";
+
+  const quote = await fetch("https://api.api-ninjas.com/v1/quotes", {"headers" : { "X-Api-Key" : key}}).then(function(response) {
+    
     return response.json();
   }).then((data)=>{return data});
 
-  
+  console.log(quote);
 
    return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -29,8 +32,9 @@ export default async function Home() {
         />
         {/* <Link href='/users'>Users</Link> */}
       </div>
-      <div id="section2" className='min-h-screen back'>
-        <h2 className=' mt-10px'>{quote[Math.floor(Math.random()*10)].text}</h2>
+      <div id="section2" className='min-h-screen back mt-40px '>
+        <h2 className=' mt-40px'>"{quote[0].quote}"</h2>
+        <h3 className=' '>-{quote[0].author}</h3>
         
       </div>
     </main>
