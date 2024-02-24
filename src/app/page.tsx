@@ -19,26 +19,26 @@ export default async function Home() {
   console.log(quote);
 
    return (
-    <main className="flex flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between p-20">
       
-      <div id="section1" className='min-h-screen '>
-        <Image
+      <div id="section1" className='mb-7 '>
+        {/* <Image
         src="/images/rose_logo.svg"
         width={200}
         height={200}
         alt="A stylized ring and rose"
         className='flex animate-[floating_7s_ease-in-out_infinite] bg-black'
-        />
+        /> */}
         <Image
           src="/images/meditation.jpg"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           alt="Meditating Humanoid"
           className='stroke-blue-500 stroke-2 animate-[floating_5s_ease-in-out_infinite] '
         />
         {/* <Link href='/users'>Users</Link> */}
       </div>
-      <div id="section2" className='flex flex-col items-center justify-between p-24'>
+      <div id="section2" className='flex flex-col items-center justify-between mt-1'>
         <h2 className=' mt-40px'>&quot;{quote[0].quote}&quot;</h2>
         <h3 className='italic '>-{quote[0].author}</h3>
         
