@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import { init } from 'next/dist/compiled/webpack/webpack'
+import React, { useState } from 'react'
 
  function Quote() {
 
@@ -10,12 +11,15 @@ import React, { useState, useEffect } from 'react'
       }
     }
 
+    let initQuote: quotation = {"0":{"content" : "A man's job is to make the world a better place to live in, so far as he is able - always remembering the results will be infinitesimal - and to attend to his own soul.", "author" : "Leroy Percy"}}
+
   async function newQuote(){
     await fetch('https://api.quotable.io/quotes/random').then((res) => {return res.json()}).then((response: quotation)=>{  
     setQuote(response)})
   }
     
-  const [quote, setQuote] = useState<quotation>({"0": {"content" : "This is a quote", "author" : "Some guy"}});
+  const [quote, setQuote] = useState<quotation>(initQuote);
+
     
   return (
     <>
