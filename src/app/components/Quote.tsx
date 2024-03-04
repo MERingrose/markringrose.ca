@@ -24,7 +24,7 @@ import React, { useState } from 'react'
   return (
     <>
     <div>
-        <h2 className=' mt-40px'>{quote[0].content}</h2>
+        <h2 className=' mt-40px'>&quot;{quote[0].content}&quot;</h2>
         <h3 className='italic '>-{quote[0].author}</h3>
     </div>
     <div className=' mt-2'>
