@@ -8,17 +8,6 @@ import Quote from './components/Quote';
 export default function Home(){
 
 
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     const response = await fetch('https://api.quotable.io/quotes/random')
-    //     if (!response.ok) {
-    //       throw new Error(`HTTP error! status: ${response.status}`)
-    //     }
-    //     const result = await response.json()
-    //     console.log(result)
-    //     setQuote(result)
-    //   } 
-    // },[])
 
    return (
     <main className="flex flex-col items-center justify-between p-20">
