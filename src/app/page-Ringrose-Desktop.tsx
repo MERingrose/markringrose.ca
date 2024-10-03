@@ -33,8 +33,8 @@ export default async function Home() {
         {/* <Link href='/users'>Users</Link> */}
       </div>
       <div id="section2" className='min-h-screen back'>
-        <h2 className=' mt-40px'>{quote[0].quote}"</h2>
-        <h3 className='italic '>-{quote[0].author}</h3>
+        {/* <h2 className=' mt-40px'>{quote[0].quote}"</h2>
+        <h3 className='italic '>-{quote[0].author}</h3> */}
         
       </div>
     </main>
