@@ -6,8 +6,8 @@ import NavBar from './components/navigation/NavBar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'The Work of Mark Ringrose',
-  description: 'A sampling of works of Mark Ringrose',
+  title: 'Mark Ringrose',
+  description: 'Markringrose.ca Coming Soon!',
 }
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}</body>
     </html>
   )

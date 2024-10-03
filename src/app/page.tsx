@@ -10,7 +10,8 @@ export default function Home(){
    return (
     <main className="flex flex-col items-center justify-between p-20">
       
-      <div id="section1" className='mb-7 '>
+      <div id="section1" className='mb-7 '>        
+        <h1>NEW THINGS COMING SOON!</h1>
 
         <Image
           src="/images/meditation.jpg"
@@ -25,7 +26,7 @@ export default function Home(){
 
       <div id="section2" className='flex flex-col items-center justify-between mt-5'>
 
-        <Quote />
+        {/* <Quote /> */}
         
       </div>
 
